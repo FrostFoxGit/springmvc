@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="TUserMapper">
+
+   <resultMap id="getUserResult" type="TUser">
+        <id property="userID" column="USERID"/>
+        <result property="userName" column="USERNAME"/>
+        <result property="password" column="PASSWORD"/>
+        <result property="email" column="EMAIL"/>
+   </resultMap>
+
+    <select id="getLogin" parameterType="TUser" resultMap="getUserResult">
+        SELECT * FROM ACC_USER WHERE USERNAME = #{userName} AND PASSWORD = #{password}
+    </select>
+    
+    <select id="getUserList" parameterType="java.util.List" resultMap="getUserResult">
+        SELECT * FROM ACC_USER
+    </select>
+    
+</mapper>
