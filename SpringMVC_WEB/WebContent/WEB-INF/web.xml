@@ -106,11 +106,11 @@
 	    <load-on-startup>1</load-on-startup>
 	</servlet>
 	
-<!-- 	<servlet id="socketUtil">
+	<servlet id="socketUtil">
 		<servlet-name>socketUtil</servlet-name>
 		<servlet-class>com.mytest.socket.util.Util</servlet-class>
 		<load-on-startup>1</load-on-startup>
-	</servlet> -->
+	</servlet>
 	
 	<servlet-mapping>
         <!--这个Servlet的名字是dispatcher，可以有多个DispatcherServlet，是通过名字来区分的。

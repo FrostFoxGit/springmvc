@@ -9,9 +9,18 @@ import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.util.Enumeration;
 import java.util.Properties;
-public class Util {
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import javax.servlet.http.HttpServlet;
+@SuppressWarnings("serial")
+public class Util extends HttpServlet {
 	
+	//创建线程池
+	public static ExecutorService EXECUTOR_SERVICE = Executors.newCachedThreadPool();
+	//启动项目时初始化下载服务端的端口
 	public static int PORT = Util.getProperties("SocketTool.PORT","socketTool");
+	//获取本地ID
 	public static String IP = Util.getIP();
 
 	/**
