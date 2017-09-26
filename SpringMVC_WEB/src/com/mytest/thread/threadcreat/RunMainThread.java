@@ -2,6 +2,7 @@ package com.mytest.thread.threadcreat;
 
 public class RunMainThread {
 	
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		CreatRunnable cr = new CreatRunnable();
 		CreatThread ct = new CreatThread();
