@@ -23,7 +23,7 @@ public class ClientThread implements Runnable{
 	@Override
 	public void run() {
 		try {
-			
+			System.out.println("123000");
 			//获取输出流，向服务器端发送信息
 			//字节输出流
 			OutputStream os = socket.getOutputStream();
