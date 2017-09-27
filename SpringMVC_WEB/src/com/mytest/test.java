@@ -2,7 +2,7 @@ package com.mytest;
 
 public class test {
 	public static void main(String[] args) {
-		System.out.println("master 修改...");
+		System.out.println("master ...");
 	}
 	
 	public void master(){
