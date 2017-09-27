@@ -10,7 +10,7 @@ public class test {
 	}
 	
 	public void IM(){
-		System.out.println("IM...");
+		System.out.println("IM");
 	}
 
 }
