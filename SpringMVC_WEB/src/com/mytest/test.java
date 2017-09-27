@@ -6,11 +6,11 @@ public class test {
 	}
 	
 	public void master(){
-		System.out.println("master");
+		System.out.println("master... ...");
 	}
 	
 	public void IM(){
-		System.out.println("IM");
+		System.out.println("IM... ...");
 	}
 
 }
